@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SXBaseAlertSheetVC-Swift/SXBaseAlertSheetVC-Swift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SXBaseAlertSheetVC-Objc/SXBaseAlertSheetVC-Objc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SXBaseSheetView-Swift/SXBaseSheetView-Swift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SXBaseSheetView-Objc/SXBaseSheetView-Objc.xcodeproj">
+   </FileRef>
+</Workspace>
