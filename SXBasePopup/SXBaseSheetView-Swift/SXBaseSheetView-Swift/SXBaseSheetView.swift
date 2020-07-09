@@ -49,7 +49,7 @@ class SXBaseSheetView: UIView {
     lazy private var controlForDismiss: UIControl = {
         let control = UIControl(frame: UIScreen.main.bounds)
         control.backgroundColor = UIColor.black.withAlphaComponent(0.3)
-        control.addTarget(self, action: #selector(dismiss), for: .touchUpInside)
+        control.addTarget(self, action: #selector(hide), for: .touchUpInside)
         return control
     }()
     private var needBottomNoMargin: Bool {
@@ -72,7 +72,7 @@ class SXBaseSheetView: UIView {
         controlForDismiss.alpha = alpha
     }
     /// 隐藏
-    @objc func dismiss() {
+    @objc func hide() {
         UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .layoutSubviews, animations: {
             self.setAllViewAlpha(alpha: 0)
             let screenH = UIScreen.main.bounds.height

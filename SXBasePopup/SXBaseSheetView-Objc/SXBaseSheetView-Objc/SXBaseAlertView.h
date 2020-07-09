@@ -16,13 +16,15 @@
 - (CGFloat)showWidth;
 /// 展现时的高度
 - (CGFloat)showHeight;
+- (void)setupUI;
 
 #pragma mark - 父类提供的展示方法
+/// 加载xib实例
++ (instancetype)view;
 /// 显示
 - (void)show;
 /// 隐藏
 - (void)hide;
 /// 隐藏
-- (void)dismiss;
-
++ (void)hide;
 @end

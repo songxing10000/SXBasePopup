@@ -59,6 +59,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    // 这里可加圆角如 self.view.layer.cornerRadius = 7.5;
+
 }
 @end
 
@@ -461,6 +463,7 @@
 {
     if (!_dimmingView) {
         UIView *dimmingView = [[UIView alloc] initWithFrame:self.containerView.bounds];
+        // 这里改你需要的背景蒙板颜色
         dimmingView.backgroundColor = [UIColor blackColor];
         //是否透明
         dimmingView.opaque = NO;
